@@ -30,8 +30,8 @@ async def fun():
     # for i in range(1000):
     #     d = asyncio.ensure_future(hello(url.format(i), semaphore))
     #     to_get.append(d)
-    result = await asyncio.gather(*to_get)
-    print(result.__len__())
+    result = await asyncio.gather(to_get)
+    print(result)
 
 
 if __name__ == '__main__':
