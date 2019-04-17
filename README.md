@@ -1,4 +1,7 @@
 #asyncio的协程的使用
+
+****ssss
+
 假如你的并发达到2000个，程序会报错：ValueError: too many file descriptors in select()。
 报错的原因字面上看是 Python 调取的 select 对打开的文件有最大数量的限制，这个其实是操作系统的限制，
 linux打开文件的最大数默认是1024，windows默认是509，超过了这个值，程序就开始报错。
